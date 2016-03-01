@@ -14,7 +14,7 @@ malignAvg = zeros(n,1);
 
 for i=1:n
     row = LIDCData(i,:);
-    malignAvg(i,1) = (row(5) + row(6) + row(7) + row(8)) / 4 ;   
+    malignAvg(i,1) = round((row(5) + row(6) + row(7) + row(8)) / 4 );   
 end
 
 Y = malignAvg; % dependent variables
